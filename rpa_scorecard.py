@@ -700,7 +700,7 @@ h1.hero{{
       <!-- Hero image -->
       <div class="intro-image-wrap">
         <img src="https://res.cloudinary.com/dwcqgcl0m/image/upload/q_auto/f_auto/v1776720417/Labs_olcsss.png"
-             alt="KrugerTech Labs" loading="eager">
+             alt="KrugerTech" loading="eager">
         <div class="intro-image-overlay"></div>
         <div class="intro-brand">
           <div class="intro-brand-dot">
