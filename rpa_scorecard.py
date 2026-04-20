@@ -710,7 +710,7 @@ h1.hero{{
               <circle cx="7" cy="7" r="1.2" fill="white"/>
             </svg>
           </div>
-          <span class="intro-brand-name">KrugerTech Labs</span>
+          <span class="intro-brand-name">KrugerTech</span>
         </div>
       </div>
       <!-- Body -->
