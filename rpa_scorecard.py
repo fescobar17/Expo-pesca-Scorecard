@@ -704,11 +704,9 @@ h1.hero{{
         <div class="intro-image-overlay"></div>
         <div class="intro-brand">
           <div class="intro-brand-dot">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <rect x="2" y="2" width="10" height="10" rx="1.5" stroke="white" stroke-width="1.3"/>
-              <rect x="4.5" y="4.5" width="5" height="5" rx="0.75" fill="rgba(255,255,255,0.35)"/>
-              <circle cx="7" cy="7" r="1.2" fill="white"/>
-            </svg>
+              <img src="https://res.cloudinary.com/dwcqgcl0m/image/upload/q_auto/f_auto/v1776721583/krugercorp_logo_ly65c3.jpg"
+                   alt="Kruger Logo"
+                   style="width:100%; height:100%; object-fit:contain;">
           </div>
           <span class="intro-brand-name">KrugerTech</span>
         </div>
