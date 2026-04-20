@@ -1032,12 +1032,23 @@ function submitForm(){{
   btn.innerHTML='Procesando... ⏳';
   document.getElementById('saving-ind').style.display='flex';
 
-  fetch(APPS_URL,{{
-    method:'POST', mode:'no-cors',
-    headers:{{'Content-Type':'text/plain;charset=utf-8'}},
-    body:JSON.stringify(payload)
-  }}).catch(()=>{{}}).finally(()=>{{showResults()}});
-}}
+  fetch(APPS_URL, {
+    method: 'POST', 
+    mode: 'no-cors', // Mantiene la seguridad de navegador
+    redirect: 'follow', // CRÍTICO: Sigue las redirecciones internas de Google
+    headers: {
+      'Content-Type': 'text/plain;charset=utf-8' 
+    },
+    body: JSON.stringify(payload)
+  })
+  .then(() => {
+    // Al usar no-cors, la respuesta es opaca, pero asumimos éxito si no hay error de red
+    showResults();
+  })
+  .catch(err => {
+    console.error("Error en la conexión:", err);
+    showResults(); // Mostramos resultados de todas formas para no bloquear la experiencia del usuario
+  });
 
 function showResults(){{
   const form=document.getElementById('form-screen');
