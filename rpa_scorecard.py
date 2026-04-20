@@ -18,7 +18,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxg4wUpOLBlzMYyHoKEyj7Drko9UHhYeYsZ5m9Hk2auFmdwbnEUcl-40RQo-IE3Jmqa/exec"
+APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxZHWra96G3x9EYNq36VXFJPaW_RRhFxCCgXwP0M4Fv9dJbrdzGSiQ4hvv1vjsBWtUH/exec"
 
 codigo_html = f"""
 <!DOCTYPE html>
