@@ -4,19 +4,35 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide", page_title="Evaluador de Madurez de Automatización")
 
 st.markdown("""
-    <style>
-        #MainMenu {visibility: hidden;}
-        footer {visibility: hidden;}
-        header {visibility: hidden;}
-        [data-testid="stAppViewContainer"] { background-color: #faf9f7; }
-        .block-container {
-            padding-top: 0rem; padding-bottom: 0rem;
-            padding-left: 0rem; padding-right: 0rem;
-            max-width: 100%;
-        }
-        .stDeployButton { display:none; }
-    </style>
-""", unsafe_allow_html=True)
+  <style>
+      #MainMenu {visibility: hidden;}
+      footer {visibility: hidden;}
+      header {visibility: hidden;}
+
+      [data-testid="stAppViewContainer"] { background-color: #faf9f7; }
+
+      .block-container {
+          padding-top: 0rem;
+          padding-bottom: 0rem;
+          padding-left: 0rem;
+          padding-right: 0rem;
+          max-width: 100%;
+      }
+
+      .stDeployButton { display:none; }
+
+      .intro-image-wrap {
+          height: 320px;
+          overflow: hidden;
+      }
+
+      .intro-image-wrap img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top center;
+      }
+  </style>""", unsafe_allow_html=True)
 
 APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyjn02eOUT-ZzJt25CI9_-ICaleG-S5jzFkuWWFNJDf0naAldPAv2f22lmHd8pl-azEfQ/exec"
 
