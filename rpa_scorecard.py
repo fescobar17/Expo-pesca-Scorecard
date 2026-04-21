@@ -36,7 +36,7 @@ st.markdown("""
             height: 140%;
             object-fit: cover;
             object-position: center top;
-            transform: translateY(-20%);
+            transform: translateY(-50%);
         }
     </style>""", unsafe_allow_html=True)
 
