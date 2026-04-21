@@ -4,41 +4,38 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide", page_title="Evaluador de Madurez de Automatización")
 
 st.markdown("""
-    <style>
-        /* Ocultar elementos de Streamlit */
-        #MainMenu, footer, header {
-            visibility: hidden;
-        }
-    
-        .stDeployButton {
-            display: none;
-        }
-    
-        /* Layout base */
-        [data-testid="stAppViewContainer"] {
-            background-color: #faf9f7;
-        }
-    
-        .block-container {
-            padding: 0;
-            max-width: 100%;
-        }
-    
-        /* Hero image fix (CLAVE) */
-        .intro-image-wrap {
-            height: 320px;
-            overflow: hidden;
-            position: relative;
-        }
-    
-        .intro-image-wrap img {
-            width: 100%;
-            height: 140%;
-            object-fit: cover;
-            object-position: center top;
-            transform: translateY(-50%);
-        }
-    </style>""", unsafe_allow_html=True)
+  <style>
+      #MainMenu {visibility: hidden;}
+      footer {visibility: hidden;}
+      header {visibility: hidden;}
+
+      [data-testid="stAppViewContainer"] { background-color: #faf9f7; }
+
+      .block-container {
+          padding-top: 0rem;
+          padding-bottom: 0rem;
+          padding-left: 0rem;
+          padding-right: 0rem;
+          max-width: 100%;
+      }
+
+      .stDeployButton { display:none; }
+
+      .intro-image-wrap {
+          height: 320px;
+          overflow: hidden;
+          position: relative;
+      }
+
+      .intro-image-wrap img {
+          width: 100%;
+          height: 100%;          /* ← 100%, no 140% */
+          object-fit: cover;
+          object-position: top center;   /* ← top para anclar al borde superior */
+          display: block;        /* ← elimina espacio fantasma bajo la imagen */
+          /* SIN transform */
+      }
+  </style>""", unsafe_allow_html=True)
 
 APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyjn02eOUT-ZzJt25CI9_-ICaleG-S5jzFkuWWFNJDf0naAldPAv2f22lmHd8pl-azEfQ/exec"
 
