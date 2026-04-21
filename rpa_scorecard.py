@@ -29,11 +29,10 @@ st.markdown("""
 
       .intro-image-wrap img {
           width: 100%;
-          height: 100%;          /* ← 100%, no 140% */
+          height: 100%;
           object-fit: cover;
-          object-position: top center;   /* ← top para anclar al borde superior */
-          display: block;        /* ← elimina espacio fantasma bajo la imagen */
-          /* SIN transform */
+          object-position: center 0%;  /* horizontal vertical */
+          display: block;
       }
   </style>""", unsafe_allow_html=True)
 
