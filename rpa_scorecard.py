@@ -36,7 +36,7 @@ st.markdown("""
       }
   </style>""", unsafe_allow_html=True)
 
-APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyjn02eOUT-ZzJt25CI9_-ICaleG-S5jzFkuWWFNJDf0naAldPAv2f22lmHd8pl-azEfQ/exec"
+APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwlJyCCJJjvYrf-__UiaZWX9Hmj8JU23fTKANXt5Ze5caEWJZXzMmHS2MSem-0oykBA6g/exec"
 
 codigo_html = f"""
 <!DOCTYPE html>
