@@ -808,7 +808,7 @@ h1.hero{{
           </div>
           <div class="field-group">
             <label class="field-label" for="f-correo">Correo electrónico</label>
-            <input class="field-input" id="f-correo" type="email" placeholder="tu@empresa.com" autocomplete="email">
+            <input class="field-input" id="f-correo" type="email" placeholder="fescobar@krugercorporation.com" autocomplete="email">
           </div>
         </div>
         <div class="form-row">
@@ -1117,7 +1117,7 @@ function animScore(target){{
 }}
 
 function openContact(){{
-  window.open('mailto:contacto@krugertech.com?subject=Solicito%20asesoria%20RPA%20-%20Score%20'+total,'_blank');
+  window.open('mailto:fescobar@krugercorporation.com?subject=Solicito%20asesoria%20RPA%20-%20Score%20'+total,'_blank');
 }}
 
 function restart(){{
